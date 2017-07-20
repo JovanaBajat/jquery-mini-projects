@@ -1,5 +1,10 @@
 $(document).ready(function(){
 	
+	$('#image-url').bind('input', function() {
+		var write = $('#image-url').val()
+		 $('#meme').attr('src', write)
+	})
+
 
 	$('#top-text').bind('input', function(){
 		var write = $('#top-text').val()
